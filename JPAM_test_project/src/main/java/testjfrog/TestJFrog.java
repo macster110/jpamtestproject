@@ -24,7 +24,7 @@ public class TestJFrog {
 		Path modelDir = Paths.get(file.getAbsoluteFile().getParent()); 
 		String modelName = file.getName(); 
 	
-		System.out.println("Loading model: " + modelName);
+		System.out.println("Loading model 1a: " + modelName);
 		
 		System.out.println(Engine.getAllEngines()); 
 

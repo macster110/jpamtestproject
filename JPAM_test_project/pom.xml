@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -14,8 +15,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<maven.compiler.source>14</maven.compiler.source>
+		<maven.compiler.target>14</maven.compiler.target>
 	</properties>
 	<profiles>
 		<profile>
@@ -39,25 +40,40 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/ai.djl/api 
+		<dependency>
+			<groupId>ai.djl</groupId>
+			<artifactId>api</artifactId>
+			<version>0.11.0</version>
+		</dependency> -->
+
+
+		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-native-auto
+		<dependency>
+			<groupId>ai.djl.tensorflow</groupId>
+			<artifactId>tensorflow-native-auto</artifactId>
+			<version>2.4.1</version>
+			<scope>runtime</scope>
+		</dependency>-->
+
+
+		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine-->
+		<dependency>
+			<groupId>ai.djl.tensorflow</groupId>
+			<artifactId>tensorflow-engine</artifactId>
+			<version>0.11.0</version>
+		</dependency>
+
 		<!-- <dependency> <groupId>org.jamdev</groupId> <artifactId>jpamutils</artifactId> 
 			<version>0.0.3</version> </dependency> -->
 
-		<dependency>
+		 <dependency>
 			<groupId>org.jamdev</groupId>
 			<artifactId>jdl4pam</artifactId>
 			<version>0.0.87</version>
 		</dependency>
 
 	</dependencies>
-	
-	<!--<profiles> <profile> <repositories> <repository> <snapshots> <enabled>false</enabled> 
-		</snapshots> <id>bintray-macster110-jtorch4pam</id> <name>bintray</name> 
-		<url>https://dl.bintray.com/macster110/jpam</url> </repository> </repositories> 
-		<pluginRepositories> <pluginRepository> <snapshots> <enabled>false</enabled> 
-		</snapshots> <id>bintray-macster110-jtorch4pam</id> <name>bintray-plugins</name> 
-		<url>https://dl.bintray.com/macster110/jpam</url> </pluginRepository> </pluginRepositories> 
-		<id>bintray</id> </profile> </profiles> -->
-	<!-- <activeProfiles> <activeProfile>bintray</activeProfile> </activeProfiles> -->
 
 
 	<build>
