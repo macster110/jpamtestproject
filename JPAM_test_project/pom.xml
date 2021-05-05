@@ -17,6 +17,19 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
+	<profiles>
+		<profile>
+			<repositories>
+				<repository>
+					<id>central</id>
+					<name>a0u0ltozdsehx-artifactory-primary-0-releases</name>
+					<url>https://jmachund.jfrog.io/artifactory/jpam</url>
+				</repository>
+				<!-- <snapshotRepository> <id>snapshots</id> <name>a0u0ltozdsehx-artifactory-primary-0-snapshots</name> 
+					<url>https://jmachund.jfrog.io/artifactory/jpam</url> </snapshotRepository> -->
+			</repositories>
+		</profile>
+	</profiles>
 
 	<dependencies>
 		<dependency>
@@ -32,26 +45,11 @@
 		<dependency>
 			<groupId>org.jamdev</groupId>
 			<artifactId>jdl4pam</artifactId>
-			<version>0.0.83</version>
+			<version>0.0.87</version>
 		</dependency>
 
 	</dependencies>
-
-
-	<profiles>
-		<profile>
-			<repositories>
-				<repository>
-					<id>central</id>
-					<name>a0u0ltozdsehx-artifactory-primary-0-releases</name>
-					<url>https://jmachund.jfrog.io/artifactory/jpam</url>
-				</repository>
-				<!-- <snapshotRepository> <id>snapshots</id> <name>a0u0ltozdsehx-artifactory-primary-0-snapshots</name> 
-					<url>https://jmachund.jfrog.io/artifactory/jpam</url> </snapshotRepository> -->
-			</repositories>
-		</profile>
-	</profiles>
-
+	
 	<!--<profiles> <profile> <repositories> <repository> <snapshots> <enabled>false</enabled> 
 		</snapshots> <id>bintray-macster110-jtorch4pam</id> <name>bintray</name> 
 		<url>https://dl.bintray.com/macster110/jpam</url> </repository> </repositories> 
