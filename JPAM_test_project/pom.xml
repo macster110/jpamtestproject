@@ -57,21 +57,22 @@
 		</dependency>-->
 
 
-		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine-->
+		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine
 		<dependency>
 			<groupId>ai.djl.tensorflow</groupId>
 			<artifactId>tensorflow-engine</artifactId>
 			<version>0.11.0</version>
-		</dependency>
-
-		<!-- <dependency> <groupId>org.jamdev</groupId> <artifactId>jpamutils</artifactId> 
-			<version>0.0.3</version> </dependency> -->
+		</dependency>-->
 
 		 <dependency>
 			<groupId>org.jamdev</groupId>
 			<artifactId>jdl4pam</artifactId>
 			<version>0.0.87</version>
 		</dependency>
+		
+				<!-- <dependency> <groupId>org.jamdev</groupId> <artifactId>jpamutils</artifactId> 
+			<version>0.0.3</version> </dependency> -->
+		
 
 	</dependencies>
 
