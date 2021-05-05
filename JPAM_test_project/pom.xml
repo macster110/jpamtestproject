@@ -56,7 +56,7 @@
 			<scope>runtime</scope>
 		</dependency>-->
 
-
+	<!--  ADD THIS DEPENDENCY TO MAKE JAR FILES WORK?? -->
 		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine
 		<dependency>
 			<groupId>ai.djl.tensorflow</groupId>
