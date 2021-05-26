@@ -1,4 +1,4 @@
-package testjfrog;
+package testdjl;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import ai.djl.engine.Engine;
  * @author Jamie Macaulay
  *
  */
-public class TestJFrog {
+public class TestDJL {
 	
 	public static void main( String[] args ) {
 		args = new String[2]; 
@@ -37,7 +37,6 @@ public class TestJFrog {
 		} catch (MalformedModelException | IOException e) {
 			e.printStackTrace();
 		}
-		
 		
 		modelPath = args[0]; 
 		file = new File(modelPath);
