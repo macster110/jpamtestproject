@@ -40,39 +40,54 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/ai.djl/api 
+		<!-- https://mvnrepository.com/artifact/ai.djl/api <dependency> <groupId>ai.djl</groupId> 
+			<artifactId>api</artifactId> <version>0.11.0</version> </dependency> -->
+
+
+		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-native-auto 
+			<dependency> <groupId>ai.djl.tensorflow</groupId> <artifactId>tensorflow-native-auto</artifactId> 
+			<version>2.4.1</version> <scope>runtime</scope> </dependency> -->
+
+		<!-- ADD THIS DEPENDENCY TO MAKE JAR FILES WORK?? -->
+		<!--https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine -->
 		<dependency>
-			<groupId>ai.djl</groupId>
-			<artifactId>api</artifactId>
+			<groupId>ai.djl.tensorflow</groupId>
+			<artifactId>tensorflow-engine</artifactId>
 			<version>0.11.0</version>
-		</dependency> -->
+		</dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-native-auto
+		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-native-auto -->
 		<dependency>
 			<groupId>ai.djl.tensorflow</groupId>
 			<artifactId>tensorflow-native-auto</artifactId>
 			<version>2.4.1</version>
 			<scope>runtime</scope>
-		</dependency>-->
+		</dependency>
 
-	<!--  ADD THIS DEPENDENCY TO MAKE JAR FILES WORK?? -->
-		<!-- https://mvnrepository.com/artifact/ai.djl.tensorflow/tensorflow-engine
+		<!-- https://mvnrepository.com/artifact/ai.djl.pytorch/pytorch-engine -->
 		<dependency>
-			<groupId>ai.djl.tensorflow</groupId>
-			<artifactId>tensorflow-engine</artifactId>
+			<groupId>ai.djl.pytorch</groupId>
+			<artifactId>pytorch-engine</artifactId>
 			<version>0.11.0</version>
-		</dependency>-->
+		</dependency>
 
-		 <dependency>
+		<!-- https://mvnrepository.com/artifact/ai.djl.pytorch/pytorch-native-auto -->
+		<dependency>
+			<groupId>ai.djl.pytorch</groupId>
+			<artifactId>pytorch-native-auto</artifactId>
+			<version>1.8.1</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.jamdev</groupId>
 			<artifactId>jdl4pam</artifactId>
 			<version>0.0.87</version>
 		</dependency>
-		
-				<!-- <dependency> <groupId>org.jamdev</groupId> <artifactId>jpamutils</artifactId> 
+
+		<!-- <dependency> <groupId>org.jamdev</groupId> <artifactId>jpamutils</artifactId> 
 			<version>0.0.3</version> </dependency> -->
-		
+
 
 	</dependencies>
 
