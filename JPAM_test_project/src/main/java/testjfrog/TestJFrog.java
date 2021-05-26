@@ -55,7 +55,6 @@ public class TestJFrog {
 		} catch (MalformedModelException | IOException e) {
 			e.printStackTrace();
 		}
-	
 		
 	}
 }
