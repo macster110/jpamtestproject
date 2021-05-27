@@ -17,10 +17,10 @@ import ai.djl.engine.Engine;
 public class TestDJL {
 	
 	public static void main( String[] args ) {
-		args = new String[2]; 
-		args[0] = "C:\\Users\\Jamie\\Desktop\\Right_whales_DG\\model_lenet_dropout_input_conv_all\\saved_model.pb"; 
-		args[1] = "C:\\Users\\Jamie\\Desktop\\pytorchmodel\\BAT_JAMIE_4ms_256fft_8hop_-100_20_15_60_128_256_NOJIT_BAT_DATA_NAUG_V1_JIT.pk"; 
-		
+//		args = new String[2]; 
+//		args[0] = "C:\\Users\\Jamie\\Desktop\\Right_whales_DG\\model_lenet_dropout_input_conv_all\\saved_model.pb"; 
+//		args[1] = "C:\\Users\\Jamie\\Desktop\\pytorchmodel\\BAT_JAMIE_4ms_256fft_8hop_-100_20_15_60_128_256_NOJIT_BAT_DATA_NAUG_V1_JIT.pk"; 
+
 		String modelPath = args[0]; 
 		File file = new File(modelPath);
 		Path modelDir = Paths.get(file.getAbsoluteFile().getParent()); 
@@ -31,12 +31,12 @@ public class TestDJL {
 		System.out.println(Engine.getAllEngines()); 
 
 		Model model = Model.newInstance(modelPath, "TensorFlow");
-		try {
-			model.load(modelDir, modelName);
-			System.out.println("Model loaded successfully: " + modelName);
-		} catch (MalformedModelException | IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			model.load(modelDir, modelName);
+//			System.out.println("Model loaded successfully: " + modelName);
+//		} catch (MalformedModelException | IOException e) {
+//			e.printStackTrace();
+//		}
 		
 		modelPath = args[0]; 
 		file = new File(modelPath);
@@ -48,12 +48,12 @@ public class TestDJL {
 		System.out.println(Engine.getAllEngines()); 
 
 		model = Model.newInstance(modelPath, "PyTorch");
-		try {
-			model.load(modelDir, modelName);
-			System.out.println("Model loaded successfully: " + modelName);
-		} catch (MalformedModelException | IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			model.load(modelDir, modelName);
+//			System.out.println("Model loaded successfully: " + modelName);
+//		} catch (MalformedModelException | IOException e) {
+//			e.printStackTrace();
+//		}
 		
 	}
 }
